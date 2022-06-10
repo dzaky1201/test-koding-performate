@@ -15,6 +15,8 @@ import com.example.performate.databinding.ActivityMainBinding
 import com.example.performate.ui.detail.DetailActivity
 import com.example.performate.ui.detail.DetailActivity.Companion.DETAIL_DATA
 import dagger.hilt.android.AndroidEntryPoint
+import java.text.SimpleDateFormat
+import java.util.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -26,11 +28,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityMainBinding
+    private var times = System.currentTimeMillis()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val format = SimpleDateFormat("dd MMM yyyy", Locale.getDefault())
+
+        binding.txtDate.text = format.format(times)
 
         mainViewModel.getPhones()
 

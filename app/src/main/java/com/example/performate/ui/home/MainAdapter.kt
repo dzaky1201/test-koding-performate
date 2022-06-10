@@ -20,9 +20,8 @@ class MainAdapter(private val selectedItem: (PhoneResponseItem) -> Unit) :
         fun bind(phone: PhoneResponseItem) {
             binding.apply {
                 txtOrderId.text = view.context.getString(R.string.order_id, phone.orderNomor.toString())
-                txtTanggal.text = view.context.getString(R.string.tanggal_order, phone.orderTanggal)
-                txtJenis.text = view.context.getString(R.string.jenis_hp, phone.jenisHandphone)
-                txtName.text = view.context.getString(R.string.nama_cutomer, phone.name)
+                txtOrderName.text = phone.name
+                txtHarga.text = view.context.getString(R.string.harga, phone.biaya)
                 binding.root.setOnClickListener {
                     selectedItem(phone)
                 }

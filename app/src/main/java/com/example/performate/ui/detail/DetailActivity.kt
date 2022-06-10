@@ -17,7 +17,7 @@ class DetailActivity : AppCompatActivity() {
         val detailData = intent?.getParcelableExtra<PhoneResponseItem>(DETAIL_DATA)
 
         binding.apply {
-            txtOrderId.text = getString(R.string.order_id, detailData?.orderNomor?.toString())
+            txtOrderId.text = getString(R.string.order_id_detail, detailData?.orderNomor?.toString())
             txtTanggal.text = getString(R.string.tanggal_order, detailData?.orderTanggal)
             txtJenis.text = getString(R.string.jenis_hp, detailData?.jenisHandphone)
             txtName.text = getString(R.string.nama_cutomer, detailData?.name)

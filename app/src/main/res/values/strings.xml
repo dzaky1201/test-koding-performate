@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Performate</string>
-    <string name="order_id">Order Id : %s</string>
+    <string name="order_id">#%s - </string>
+
+    <string name="order_id_detail">#%s </string>
     <string name="tanggal_order">Tanggal Order : %s</string>
     <string name="jenis_hp">Jenis HP : %s</string>
+    <string name="harga">Rp %s</string>
     <string name="nama_cutomer">Nama Customer : %s</string>
     <string name="nomor_hp">Nomor Customer : %s</string>
+    <string name="order_title">Daily Order</string>
+    <string name="this_week">This Week</string>
+    <string name="last_week">Last Week</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
 </resources>
