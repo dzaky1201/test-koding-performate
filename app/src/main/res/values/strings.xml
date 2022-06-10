@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Performate</string>
+    <string name="order_id">Order Id : %s</string>
+    <string name="tanggal_order">Tanggal Order : %s</string>
+    <string name="jenis_hp">Jenis HP : %s</string>
+    <string name="nama_cutomer">Nama Customer : %s</string>
+    <string name="nomor_hp">Nomor Customer : %s</string>
+</resources>
